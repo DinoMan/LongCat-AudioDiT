@@ -19,6 +19,7 @@ from .modeling_audiodit import (
     AudioDiTVae,
     AudioDiTOutput,
 )
+from .utils import approx_duration_from_text, load_audio, normalize_text
 
 # Auto-register with transformers so AutoConfig/AutoModel work
 from transformers import AutoConfig, AutoModel
@@ -34,4 +35,7 @@ __all__ = [
     "AudioDiTTransformer",
     "AudioDiTVae",
     "AudioDiTOutput",
+    "approx_duration_from_text",
+    "load_audio",
+    "normalize_text",
 ]
